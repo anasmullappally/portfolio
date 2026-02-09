@@ -68,17 +68,37 @@ export const MY_STACK: StackSection[] = [
         title: 'Tools & Platforms',
         items: [
             { name: 'Git', icon: '/icons/git.svg' },
-            { name: 'GitHub', icon: '/icons/github.png' },
+            { name: 'GitHub', icon: '/icons/github.svg' },
             { name: 'Jira', icon: '/icons/jira.svg' },
             { name: 'Figma', icon: '/icons/figma.svg' },
         ],
     }
 ];
 
-
 export const SOCIAL_LINKS = [
     { name: 'github', url: 'https://github.com/anasmullappally' },
     { name: 'linkedin', url: 'https://www.linkedin.com/in/anasmullappally/' },
     { name: 'instagram', url: 'https://www.instagram.com/anas.mullappally/' },
     { name: 'facebook', url: 'https://www.facebook.com/' },
+];
+
+export const MY_EXPERIENCE = [
+    {
+        title: 'Full Stack Developer',
+        company: 'Appiness Interactive',
+        location: 'Bangalore, India',
+        duration: 'Jun 2024 - Present',
+    },
+    {
+        title: 'Full Stack Developer',
+        company: 'Plutocrat Simulations Tech Pvt. Ltd',
+        location: 'Hyderabad, India',
+        duration: 'Nov 2022 - Feb 2024',
+    },
+    {
+        title: 'MERN Stack Trainee',
+        company: 'Brototype',
+        location: 'Calicut, Kerala',
+        duration: 'Feb 2022 - Nov 2022',
+    },
 ];
