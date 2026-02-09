@@ -11,3 +11,13 @@ export type Variant =
     | 'dark'
     | 'link'
     | 'no-color';
+
+export type StackItem = {
+    name: string;
+    icon: string;
+};
+
+export type StackSection = {
+    title: string;
+    items: StackItem[];
+};
