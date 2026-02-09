@@ -1,9 +1,11 @@
+import AboutMe from '@/components/home/AboutMe';
 import Banner from '@/components/home/Banner';
 
 export default function Home() {
   return (
-    <div className='page-'>
+    <div className=''>
       <Banner />
+      <AboutMe />
     </div>
   );
 }
