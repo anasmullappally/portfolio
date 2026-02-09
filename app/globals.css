@@ -40,10 +40,14 @@
     }
     * {
         border-color: hsl(var(--border));
-        cursor: none;
+        cursor: none !important;
     }
     body {
         @apply bg-background text-foreground font-roboto-flex;
+        cursor: none !important;
+    }
+    a, button, input, select, textarea, [role="button"] {
+        cursor: none !important;
     }
 }
 
