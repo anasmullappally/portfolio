@@ -8,6 +8,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import ParticleBackground from "@/components/ParticleBackground";
 import StickyEmail from "@/components/StickyEmail";
+import CustomCursor from "@/components/CustomCursor";
 
 const antonFont = Anton({
   weight: "400",
@@ -52,6 +53,7 @@ export default function RootLayout({
             duration: 1.4,
           }}
         >
+          <CustomCursor />
           <ParticleBackground />
           <StickyEmail />
 
