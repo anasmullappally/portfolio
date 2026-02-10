@@ -49,33 +49,35 @@ const Banner = () => {
             >
                 {/* Left Content */}
                 <div className="max-md:grow max-md:flex flex-col justify-center items-start max-w-[600px]">
-                    <h1 className="banner-title slide-up-and-fade leading-[.95] text-6xl sm:text-[80px] font-anton">
-                        <span className="text-primary">FULL STACK</span>
-                        <br /> <span className="ml-4">DEVELOPER</span>
+                    <h1 className="banner-title slide-up-and-fade leading-[.95] text-6xl sm:text-[80px] font-anton uppercase">
+                        <span className="text-primary">{GENERAL_INFO.name.split(' ')[0]}</span>
+                        <br /> <span className="ml-">{GENERAL_INFO.name.split(' ').slice(1).join(' ')}</span>
                     </h1>
 
                     <p className="banner-description slide-up-and-fade mt-6 text-lg text-muted-foreground">
-                        Hi! I&apos;m{' '}
+                        A{" "}
                         <span className="font-medium text-foreground">
-                            {GENERAL_INFO.name}
-                        </span>
-                        . A Full Stack Developer specializing in building scalable,
-                        high-performance web applications using Next.js, React,
-                        Node.js, and modern cloud technologies.
+                            Full Stack Developer
+                        </span>{" "}
+                        specializing in building scalable, high-performance web
+                        applications using Next.js, React, Node.js, and modern
+                        cloud technologies.
                     </p>
 
-                    <Button
-                        as="link"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href={`mailto:${GENERAL_INFO.email}?subject=${encodeURIComponent(
-                            GENERAL_INFO.emailSubject
-                        )}&body=${encodeURIComponent(GENERAL_INFO.emailBody)}`}
-                        variant="primary"
-                        className="mt-9 banner-button slide-up-and-fade"
-                    >
-                        Let’s Work Together
-                    </Button>
+                    <div className="mt-9 flex flex-wrap gap-4 slide-up-and-fade">
+                        <Button
+                            as="link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href={`mailto:${GENERAL_INFO.email}?subject=${encodeURIComponent(
+                                GENERAL_INFO.emailSubject
+                            )}&body=${encodeURIComponent(GENERAL_INFO.emailBody)}`}
+                            variant="primary"
+                            className="banner-button"
+                        >
+                            Let’s Work Together
+                        </Button>
+                    </div>
                 </div>
 
                 {/* Right Stats */}

@@ -37,32 +37,46 @@ const Navbar = () => {
 
     return (
         <>
-            <div className="sticky top-0 z-[50]">
-                <button
-                    className={cn(
-                        'group size-12 absolute top-5 right-5 md:right-10 z-10',
-                    )}
-                    onClick={() => setIsMenuOpen(!isMenuOpen)}
-                >
-                    <span
+            <div className="sticky top-0 z-[60] pointer-events-none">
+                <div className="flex items-center gap-4 absolute top-5 right-5 md:right-10 pointer-events-auto">
+                    <a
+                        href={GENERAL_INFO.resumeUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group relative px-4 py-1 border border-foreground/20 rounded overflow-hidden transition-colors duration-300 hover:border-primary max-md:hidden"
+                    >
+                        <span className="absolute inset-0 bg-primary translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
+                        <span className="relative z-10 font-anton uppercase text-xs tracking-widest group-hover:text-black transition-colors duration-300">
+                            Resume
+                        </span>
+                    </a>
+
+                    <button
                         className={cn(
-                            'inline-block w-3/5 h-0.5 bg-foreground rounded-full absolute left-1/2 -translate-x-1/2 top-1/2 duration-300 -translate-y-[5px] ',
-                            {
-                                'rotate-45 -translate-y-1/2': isMenuOpen,
-                                'md:group-hover:rotate-12': !isMenuOpen,
-                            },
+                            'group size-12 relative z-10',
                         )}
-                    ></span>
-                    <span
-                        className={cn(
-                            'inline-block w-3/5 h-0.5 bg-foreground rounded-full absolute left-1/2 -translate-x-1/2 top-1/2 duration-300 translate-y-[5px] ',
-                            {
-                                '-rotate-45 -translate-y-1/2': isMenuOpen,
-                                'md:group-hover:-rotate-12': !isMenuOpen,
-                            },
-                        )}
-                    ></span>
-                </button>
+                        onClick={() => setIsMenuOpen(!isMenuOpen)}
+                    >
+                        <span
+                            className={cn(
+                                'inline-block w-3/5 h-0.5 bg-foreground rounded-full absolute left-1/2 -translate-x-1/2 top-1/2 duration-300 -translate-y-[5px] ',
+                                {
+                                    'rotate-45 -translate-y-1/2': isMenuOpen,
+                                    'md:group-hover:rotate-12': !isMenuOpen,
+                                },
+                            )}
+                        ></span>
+                        <span
+                            className={cn(
+                                'inline-block w-3/5 h-0.5 bg-foreground rounded-full absolute left-1/2 -translate-x-1/2 top-1/2 duration-300 translate-y-[5px] ',
+                                {
+                                    '-rotate-45 -translate-y-1/2': isMenuOpen,
+                                    'md:group-hover:-rotate-12': !isMenuOpen,
+                                },
+                            )}
+                        ></span>
+                    </button>
+                </div>
             </div>
 
             <div
@@ -141,6 +155,27 @@ const Navbar = () => {
                                         </button>
                                     </li>
                                 ))}
+                                <li>
+                                    <a
+                                        href={GENERAL_INFO.resumeUrl}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="group text-xl flex items-center gap-3"
+                                    >
+                                        <span
+                                            className={cn(
+                                                'size-3.5 bg-white/20 rounded-full flex items-center justify-center group-hover:scale-[200%] transition-all',
+                                                COLORS[0],
+                                            )}
+                                        >
+                                            <MoveUpRight
+                                                size={8}
+                                                className="scale-0 group-hover:scale-100 transition-all"
+                                            />
+                                        </span>
+                                        Resume
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>

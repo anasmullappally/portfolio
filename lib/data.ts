@@ -9,6 +9,7 @@ export const GENERAL_INFO = {
     carrerStartDate: "2022-11-01", // YYYY-MM-DD
     totalProjects: 15,
     productionDeployments: 5,
+    resumeUrl: "/resume.pdf",
 };
 
 export const MY_STACK: StackSection[] = [
