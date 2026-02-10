@@ -9,6 +9,7 @@ import Navbar from "@/components/Navbar";
 import ParticleBackground from "@/components/ParticleBackground";
 import StickyEmail from "@/components/StickyEmail";
 import CustomCursor from "@/components/CustomCursor";
+import Footer from "@/components/Footer";
 
 const antonFont = Anton({
   weight: "400",
@@ -59,6 +60,7 @@ export default function RootLayout({
 
           <Navbar />
           <main className="relative z-10">{children}</main>
+          <Footer />
         </ReactLenis>
       </body>
     </html>

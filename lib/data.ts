@@ -1,4 +1,4 @@
-import { StackSection } from "@/types";
+import { IProject, StackSection } from "@/types";
 
 export const GENERAL_INFO = {
     name: "Anas Mullappally",
@@ -100,5 +100,48 @@ export const MY_EXPERIENCE = [
         company: 'Brototype',
         location: 'Calicut, Kerala',
         duration: 'Feb 2022 - Nov 2022',
+    },
+];
+
+export const PROJECTS: IProject[] = [
+    {
+        title: 'Shoppi',
+        slug: 'shoppi',
+        description:
+            'Full-featured e-commerce platform with vendor management, Razorpay integration, authentication, and admin dashboard.',
+        tech: ['Node.js', 'Express', 'MongoDB', 'Razorpay', 'Bootstrap'],
+        thumbnail: '/projects/shoppi.png',
+        live: '',
+        github: '',
+    },
+    {
+        title: 'Chit-Chat',
+        slug: 'chit-chat',
+        description:
+            'Real-time chat application with secure authentication, instant notifications, and Socket.IO powered messaging.',
+        tech: ['React', 'Node.js', 'Socket.IO', 'JWT', 'MongoDB'],
+        thumbnail: '/projects/chit-chat.png',
+        live: '',
+        github: '',
+    },
+    {
+        title: 'Incubation Management System',
+        slug: 'incubation-management',
+        description:
+            'Startup registration and slot booking platform built with React and Node.js to streamline onboarding workflows.',
+        tech: ['React', 'Node.js', 'MongoDB'],
+        thumbnail: '/projects/incubation.png',
+        live: '',
+        github: '',
+    },
+    {
+        title: 'AI Search System',
+        slug: 'ai-search',
+        description:
+            'AI-powered contextual search built using OpenAI, Pinecone, and Algolia for intelligent recommendations.',
+        tech: ['Next.js', 'OpenAI', 'Pinecone', 'Algolia'],
+        thumbnail: '/projects/ai-search.png',
+        live: '',
+        github: '',
     },
 ];

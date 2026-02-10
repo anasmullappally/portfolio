@@ -21,3 +21,15 @@ export type StackSection = {
     title: string;
     items: StackItem[];
 };
+
+export type IProject = {
+    title: string;
+    slug: string;
+    description: string;
+    tech: string[];
+    thumbnail: string;
+    live?: string;
+    github?: string;
+    featured?: boolean;
+};
+
