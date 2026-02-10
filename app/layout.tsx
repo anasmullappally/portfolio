@@ -10,6 +10,7 @@ import ParticleBackground from "@/components/ParticleBackground";
 import StickyEmail from "@/components/StickyEmail";
 import CustomCursor from "@/components/CustomCursor";
 import Footer from "@/components/Footer";
+import Preloader from "@/components/Preloader";
 
 const antonFont = Anton({
   weight: "400",
@@ -54,6 +55,7 @@ export default function RootLayout({
             duration: 1.4,
           }}
         >
+          <Preloader />
           <CustomCursor />
           <ParticleBackground />
           <StickyEmail />
