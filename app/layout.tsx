@@ -11,6 +11,7 @@ import StickyEmail from "@/components/StickyEmail";
 import CustomCursor from "@/components/CustomCursor";
 import Footer from "@/components/Footer";
 import Preloader from "@/components/Preloader";
+import ScrollProgressIndicator from "@/components/ScrollProgressIndicator";
 
 const antonFont = Anton({
   weight: "400",
@@ -46,7 +47,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${antonFont.variable} ${robotoFlex.variable} antialiased bg-black text-white`}
+        className={`${antonFont.variable} ${robotoFlex.variable} antialiased`}
       >
         <ReactLenis
           root
@@ -55,13 +56,13 @@ export default function RootLayout({
             duration: 1.4,
           }}
         >
+          <Navbar />
           <Preloader />
           <CustomCursor />
           <ParticleBackground />
+          <ScrollProgressIndicator />
           <StickyEmail />
-
-          <Navbar />
-          <main className="relative z-10">{children}</main>
+          <main className="relative z-10 bg-black">{children}</main>
           <Footer />
         </ReactLenis>
       </body>

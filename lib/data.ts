@@ -10,6 +10,7 @@ export const GENERAL_INFO = {
     totalProjects: 15,
     productionDeployments: 5,
     resumeUrl: "/resume.pdf",
+    githubUrl: "https://github.com/anasmullappally",
 };
 
 export const MY_STACK: StackSection[] = [

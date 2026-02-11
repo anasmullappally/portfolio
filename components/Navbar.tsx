@@ -133,17 +133,24 @@ const Navbar = () => {
                             <ul className="space-y-3">
                                 {MENU_LINKS.map((link, idx) => (
                                     <li key={link.name}>
-                                        <button
-                                            onClick={() => {
-                                                router.push(link.url);
-                                                setIsMenuOpen(false);
+                                        <a
+                                            href={link.url}
+                                            onClick={(e) => {
+                                                if (link.url.startsWith('/#')) {
+                                                    // Allow default anchor behavior
+                                                    setTimeout(() => setIsMenuOpen(false), 100);
+                                                } else {
+                                                    e.preventDefault();
+                                                    router.push(link.url);
+                                                    setIsMenuOpen(false);
+                                                }
                                             }}
                                             className="group text-xl flex items-center gap-3"
                                         >
                                             <span
                                                 className={cn(
                                                     'size-3.5 bg-white/20 rounded-full flex items-center justify-center group-hover:scale-[200%] transition-all',
-                                                    COLORS[idx],
+                                                    COLORS[idx % COLORS.length],
                                                 )}
                                             >
                                                 <MoveUpRight
@@ -152,7 +159,7 @@ const Navbar = () => {
                                                 />
                                             </span>
                                             {link.name}
-                                        </button>
+                                        </a>
                                     </li>
                                 ))}
                                 <li>
