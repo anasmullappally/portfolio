@@ -2,7 +2,7 @@ import { GENERAL_INFO } from '@/lib/data';
 
 const Footer = () => {
     return (
-        <footer className="text-center pb-5 bg-black" id="contact">
+        <footer className="text-center pb-5" id="contact">
             <div className="container">
                 <p className="text-lg">Have a project in mind?</p>
                 <a
@@ -16,7 +16,7 @@ const Footer = () => {
                     <a
                         href={GENERAL_INFO.githubUrl}
                         target="_blank"
-                        className="leading-none text-muted-foreground hover:underline hover:text-white"
+                        className="leading-none text-muted-foreground hover:underline hover:text-foreground"
                     >
                         {`Built by ${GENERAL_INFO.name} <3`}
                     </a>

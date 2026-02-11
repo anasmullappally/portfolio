@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { MoveUpRight } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import { GENERAL_INFO, SOCIAL_LINKS } from '@/lib/data';
+import { ThemeToggle } from './ThemeToggle';
 
 const COLORS = [
     'bg-yellow-500 text-black',
@@ -46,10 +47,12 @@ const Navbar = () => {
                         className="group relative px-4 py-1 border border-foreground/20 rounded overflow-hidden transition-colors duration-300 hover:border-primary max-md:hidden"
                     >
                         <span className="absolute inset-0 bg-primary translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
-                        <span className="relative z-10 font-anton uppercase text-xs tracking-widest group-hover:text-black transition-colors duration-300">
+                        <span className="relative z-10 font-anton uppercase text-xs tracking-widest group-hover:text-primary-foreground transition-colors duration-300">
                             Resume
                         </span>
                     </a>
+
+                    <ThemeToggle />
 
                     <button
                         className={cn(
@@ -81,7 +84,7 @@ const Navbar = () => {
 
             <div
                 className={cn(
-                    'overlay fixed inset-0 z-[40] bg-black/70 transition-all duration-150',
+                    'overlay fixed inset-0 z-[40] bg-background/70 transition-all duration-150',
                     {
                         'opacity-0 invisible pointer-events-none': !isMenuOpen,
                     },
@@ -149,7 +152,7 @@ const Navbar = () => {
                                         >
                                             <span
                                                 className={cn(
-                                                    'size-3.5 bg-white/20 rounded-full flex items-center justify-center group-hover:scale-[200%] transition-all',
+                                                    'size-3.5 bg-foreground/20 rounded-full flex items-center justify-center group-hover:scale-[200%] transition-all',
                                                     COLORS[idx % COLORS.length],
                                                 )}
                                             >

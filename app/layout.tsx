@@ -13,6 +13,8 @@ import Footer from "@/components/Footer";
 import Preloader from "@/components/Preloader";
 import ScrollProgressIndicator from "@/components/ScrollProgressIndicator";
 
+import { ThemeProvider } from "@/components/ThemeProvider";
+
 const antonFont = Anton({
   weight: "400",
   subsets: ["latin"],
@@ -49,23 +51,31 @@ export default function RootLayout({
       <body
         className={`${antonFont.variable} ${robotoFlex.variable} antialiased`}
       >
-        <ReactLenis
-          root
-          options={{
-            lerp: 0.1,
-            duration: 1.4,
-          }}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
         >
-          <Navbar />
-          <Preloader />
-          <CustomCursor />
-          <ParticleBackground />
-          <ScrollProgressIndicator />
-          <StickyEmail />
-          <main className="relative z-10 bg-black">{children}</main>
-          <Footer />
-        </ReactLenis>
+          <ReactLenis
+            root
+            options={{
+              lerp: 0.1,
+              duration: 1.4,
+            }}
+          >
+            <Navbar />
+            <Preloader />
+            <CustomCursor />
+            <main className="relative z-10">{children}</main>
+            <ParticleBackground />
+            <ScrollProgressIndicator />
+            <StickyEmail />
+            <Footer />
+          </ReactLenis>
+        </ThemeProvider>
       </body>
     </html>
   );
 }
+
