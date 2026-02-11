@@ -1,34 +1,22 @@
 'use client';
-import React, { useEffect, useRef } from 'react';
+import { useRef } from 'react';
+import { useLenis } from 'lenis/react';
 
 const ScrollProgressIndicator = () => {
     const scrollBarRef = useRef<HTMLDivElement>(null);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            if (scrollBarRef.current) {
-                const { scrollHeight, clientHeight } = document.documentElement;
-                const scrollableHeight = scrollHeight - clientHeight;
-                const scrollY = window.scrollY;
-                const scrollProgress = (scrollY / scrollableHeight) * 100;
-
-                scrollBarRef.current.style.transform = `translateY(-${
-                    100 - scrollProgress
-                }%)`;
-            }
-        };
-
-        handleScroll();
-
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
+    useLenis(({ progress }) => {
+        if (scrollBarRef.current) {
+            scrollBarRef.current.style.width = `${progress * 100}%`;
+        }
+    });
 
     return (
-        <div className="fixed top-[50svh] right-[2%] -translate-y-1/2 w-1.5 h-[100px] rounded-full bg-background-light overflow-hidden">
+        <div className="fixed top-0 left-0 w-full h-1 z-[100] bg-foreground/10">
             <div
-                className="w-full bg-primary rounded-full h-full"
+                className="h-full bg-primary transition-all duration-75 ease-out"
                 ref={scrollBarRef}
+                style={{ width: '0%' }}
             ></div>
         </div>
     );
