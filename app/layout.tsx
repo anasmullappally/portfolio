@@ -12,6 +12,7 @@ import CustomCursor from "@/components/CustomCursor";
 import Footer from "@/components/Footer";
 import Preloader from "@/components/Preloader";
 import ScrollProgressIndicator from "@/components/ScrollProgressIndicator";
+import StructuredData from "@/components/StructuredData";
 
 import { ThemeProvider } from "@/components/ThemeProvider";
 
@@ -28,18 +29,64 @@ const robotoFlex = Roboto_Flex({
 });
 
 export const metadata: Metadata = {
-  title: "Anas Mullappally | Full Stack Developer",
+  metadataBase: new URL("https://anasmullappally.com"),
+  title: {
+    default: "Anas Mullappally | Full Stack Developer",
+    template: "%s | Anas Mullappally",
+  },
   description:
-    "Personal portfolio of Anas Mullappally - Full Stack Developer specializing in modern web applications.",
-  keywords: ["Anas Mullappally", "Full Stack Developer", "Next.js Developer"],
-  authors: [{ name: "Anas Mullappally" }],
+    "Personal portfolio of Anas Mullappally - Full Stack Developer specializing in modern, high-performance web applications using Next.js, React, and Node.js.",
+  keywords: [
+    "Anas Mullappally",
+    "Full Stack Developer",
+    "Next.js Developer",
+    "React Developer",
+    "Tailwind CSS",
+    "GSAP Animations",
+    "Software Engineer Portfolio",
+  ],
+  authors: [{ name: "Anas Mullappally", url: "https://anasmullappally.com" }],
+  creator: "Anas Mullappally",
   openGraph: {
-    title: "Anas Mullappally | Portfolio",
+    title: "Anas Mullappally | Full Stack Developer",
     description:
-      "Explore projects and experience of Anas Mullappally, Full Stack Developer.",
+      "Explore the portfolio of Anas Mullappally, a Full Stack Developer dedicated to building scalable and user-centric web solutions.",
+    url: "https://anasmullappally.com",
+    siteName: "Anas Mullappally Portfolio",
+    images: [
+      {
+        url: "/og-image.png", // Ensure this image exists in public folder
+        width: 1200,
+        height: 630,
+        alt: "Anas Mullappally Portfolio",
+      },
+    ],
+    locale: "en_US",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Anas Mullappally | Full Stack Developer",
+    description: "Full Stack Developer specializing in modern web applications.",
+    images: ["/og-image.png"],
+    creator: "@anasmullappally", // Replace with real handle if known
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  alternates: {
+    canonical: "https://anasmullappally.com",
+  },
 };
+
 
 export default function RootLayout({
   children,
@@ -48,6 +95,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <StructuredData />
+      </head>
       <body
         className={`${antonFont.variable} ${robotoFlex.variable} antialiased`}
       >

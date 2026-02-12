@@ -22,10 +22,14 @@ export const MY_STACK: StackSection[] = [
             { name: 'React.js', icon: '/icons/react.png' },
             { name: 'Next.js', icon: '/icons/next.png' },
             { name: 'Redux Toolkit', icon: '/icons/redux.png' },
+            { name: 'HTML', icon: '/icons/html.svg' },
+            { name: 'CSS', icon: '/icons/css.svg' },
             { name: 'Tailwind CSS', icon: '/icons/tailwind.png' },
             { name: 'SCSS', icon: '/icons/sass.png' },
             { name: 'Bootstrap', icon: '/icons/bootstrap.svg' },
             { name: 'Material UI', icon: '/icons/mui.svg' },
+            { name: 'Chakra UI', icon: '/icons/chakra.svg' },
+            { name: 'jQuery', icon: '/icons/jquery.svg' },
             { name: 'Storybook', icon: '/icons/storybook.svg' },
         ],
     },
@@ -36,8 +40,9 @@ export const MY_STACK: StackSection[] = [
             { name: 'Express.js', icon: '/icons/express.png' },
             { name: 'Socket.IO', icon: '/icons/socketio.svg' },
             { name: 'JWT Auth', icon: '/icons/jwt.webp' },
-            { name: 'REST APIs', icon: '/icons/api.svg' },
+            { name: 'REST APIs', icon: '/icons/rest_api.svg' },
             { name: 'Mongoose', icon: '/icons/mongoose.svg' },
+            { name: 'Jest', icon: '/icons/jest.svg' },
         ],
     },
     {
@@ -71,6 +76,9 @@ export const MY_STACK: StackSection[] = [
         items: [
             { name: 'Git', icon: '/icons/git.svg' },
             { name: 'GitHub', icon: '/icons/github.svg' },
+            { name: 'RabbitMQ', icon: '/icons/rabbitmq.svg' },
+            { name: 'Postman', icon: '/icons/postman.svg' },
+            { name: 'Swagger', icon: '/icons/swagger.svg' },
             { name: 'Jira', icon: '/icons/jira.svg' },
             { name: 'Figma', icon: '/icons/figma.svg' },
         ],
@@ -79,9 +87,9 @@ export const MY_STACK: StackSection[] = [
 
 export const SOCIAL_LINKS = [
     { name: 'github', url: 'https://github.com/anasmullappally' },
-    { name: 'linkedin', url: 'https://www.linkedin.com/in/anasmullappally/' },
-    { name: 'instagram', url: 'https://www.instagram.com/anas.mullappally/' },
-    { name: 'facebook', url: 'https://www.facebook.com/' },
+    { name: 'linkedin', url: 'https://www.linkedin.com/in/anasmullappally' },
+    { name: 'instagram', url: 'https://www.instagram.com/anas.mullappally' },
+    { name: 'facebook', url: 'https://www.facebook.com/anas.mullappally1' },
 ];
 
 export const MY_EXPERIENCE = [
