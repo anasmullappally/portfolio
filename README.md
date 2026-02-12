@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Anas Mullappally | Full Stack Developer Portfolio 
+
+Welcome to the official repository of my personal portfolio. This project is a showcase of my skills, experience, and the premium web applications I've built using modern web technologies.
+
+![Portfolio Preview](/public/og-image.png)
+
+## Features
+
+- **Premium Design Aesthetics**: A sleek, dark-themed interface with high-end typography and a floating particle background.
+- **Dynamic Animations**: Powered by **GSAP (GreenSock Animation Platform)** for smooth, scroll-triggered reveals and interactive hover states.
+- **Fluid User Experience**: Integrated with **Lenis** for industry-standard smooth scrolling.
+- **Universal Theme Support**: Optimized for both Light and Dark modes using `next-themes`.
+- **Advanced SEO**: 
+  - Dynamic `sitemap.xml` and `robots.txt` generation.
+  - Comprehensive Open Graph (OG) and Twitter Card metadata for social sharing.
+  - JSON-LD Structured Data for enhanced search engine indexing.
+- **Responsive Architecture**: Fully optimized for mobile, tablet, and desktop viewports.
+- **Theme-Aware Tech Stack**: A dynamic "My Stack" section featuring icons that automatically adapt to the current theme.
+
+## Built With
+
+### Core
+- **Next.js 15** (App Router)
+- **React 19**
+- **TypeScript**
+- **Tailwind CSS**
+
+### Animation & Smooth Scroll
+- **GSAP** & **@gsap/react**
+- **Lenis**
+
+### Icons & Assets
+- **Lucide React**
+- **Simple Icons** (via CDN for dynamic coloring)
+- **Custom SVGs**
+
+### Deployment & SEO
+- **Vercel**
+- **Next.js Metadata API**
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+- Node.js (v18 or higher)
+- npm or yarn
 
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/anasmullappally/portfolio.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd portfolio
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Development
+Run the development server:
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
-
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build
+Generate a production-ready build:
+```bash
+npm run build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Structure
 
-## Learn More
+- `app/`: Next.js App Router pages and layouts.
+- `components/`: Reusable UI components (Navbar, Footer, Skills, etc.).
+- `lib/`: Utility functions and global data constants (`data.ts`).
+- `public/`: Static assets including icons, images, and resume.
+- `styles/`: Global CSS and Tailwind configurations.
 
-To learn more about Next.js, take a look at the following resources:
+## Contact & Socials
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Email**: [anasmullappally.dev@gmail.com](mailto:anasmullappally.dev@gmail.com)
+- **LinkedIn**: [Muhammed Anas MP](https://www.linkedin.com/in/anasmullappally)
+- **GitHub**: [@anasmullappally](https://github.com/anasmullappally)
+- **Instagram**: [@anas.mullappally](https://www.instagram.com/anas.mullappally)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+Built with <3 by Anas Mullappally
