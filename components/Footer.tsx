@@ -7,10 +7,18 @@ const Footer = () => {
                 <p className="text-lg">Have a project in mind?</p>
                 <a
                     href={`mailto:${GENERAL_INFO.email}`}
-                    className="text-2xl sm:text-3xl md:text-4xl font-anton inline-block mt-5 mb-10 hover:text-primary transition-colors break-all sm:break-normal"
+                    className="text-2xl sm:text-3xl md:text-5xl font-anton inline-block mt-8 mb-4 hover:text-primary transition-colors break-all sm:break-normal"
                 >
                     {GENERAL_INFO.email}
                 </a>
+                <div className="mb-10">
+                    <a
+                        href={`tel:${GENERAL_INFO.phone}`}
+                        className="text-xl sm:text-2xl md:text-3xl font-anton text-muted-foreground hover:text-primary transition-colors"
+                    >
+                        {GENERAL_INFO.phoneDisplay}
+                    </a>
+                </div>
 
                 <div className="">
                     <a

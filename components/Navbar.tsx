@@ -191,10 +191,19 @@ const Navbar = () => {
                     </div>
                 </div>
 
-                <div className="w-full max-w-[300px] mx-8 sm:mx-auto">
+                <div className="w-full max-w-[300px] mx-8 sm:mx-auto space-y-2">
                     <p className="text-muted-foreground mb-4">GET IN TOUCH</p>
-                    <a href={`mailto:${GENERAL_INFO.email}`}>
+                    <a
+                        href={`mailto:${GENERAL_INFO.email}`}
+                        className="block text-lg hover:text-primary transition-colors"
+                    >
                         {GENERAL_INFO.email}
+                    </a>
+                    <a
+                        href={`tel:${GENERAL_INFO.phone}`}
+                        className="block text-lg hover:text-primary transition-colors"
+                    >
+                        {GENERAL_INFO.phoneDisplay}
                     </a>
                 </div>
             </div>

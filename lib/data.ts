@@ -3,6 +3,8 @@ import { IProject, StackSection } from "@/types";
 export const GENERAL_INFO = {
     name: "Anas Mullappally",
     email: "anasmullappally.dev@gmail.com",
+    phone: "+918547700297",
+    phoneDisplay: "+91 85477 00297",
     emailSubject: "Let's collaborate on a project",
     emailBody:
         "Hi Anas, I came across your portfolio and would love to discuss a potential project with you.",
