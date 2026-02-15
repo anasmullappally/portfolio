@@ -22,14 +22,21 @@ export type StackSection = {
     items: StackItem[];
 };
 
-export type IProject = {
+export interface IProject {
     title: string;
     slug: string;
+    year: number;
+
     description: string;
-    tech: string[];
+    role?: string;
+
+    techStack: string[];
+
+    liveUrl?: string;
+    sourceCode?: string;
+
     thumbnail: string;
-    live?: string;
-    github?: string;
-    featured?: boolean;
-};
+    longThumbnail: string;
+    images: string[];
+}
 

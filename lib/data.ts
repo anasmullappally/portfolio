@@ -117,43 +117,57 @@ export const MY_EXPERIENCE = [
 
 export const PROJECTS: IProject[] = [
     {
-        title: 'Shoppi',
-        slug: 'shoppi',
-        description:
-            'Full-featured e-commerce platform with vendor management, Razorpay integration, authentication, and admin dashboard.',
-        tech: ['Node.js', 'Express', 'MongoDB', 'Razorpay', 'Bootstrap'],
-        thumbnail: '/projects/shoppi.png',
-        live: '',
-        github: '',
-    },
-    {
-        title: 'Chit-Chat',
-        slug: 'chit-chat',
-        description:
-            'Real-time chat application with secure authentication, instant notifications, and Socket.IO powered messaging.',
-        tech: ['React', 'Node.js', 'Socket.IO', 'JWT', 'MongoDB'],
-        thumbnail: '/projects/chit-chat.png',
-        live: '',
-        github: '',
-    },
-    {
-        title: 'Incubation Management System',
-        slug: 'incubation-management',
-        description:
-            'Startup registration and slot booking platform built with React and Node.js to streamline onboarding workflows.',
-        tech: ['React', 'Node.js', 'MongoDB'],
-        thumbnail: '/projects/incubation.png',
-        live: '',
-        github: '',
-    },
-    {
-        title: 'AI Search System',
-        slug: 'ai-search',
-        description:
-            'AI-powered contextual search built using OpenAI, Pinecone, and Algolia for intelligent recommendations.',
-        tech: ['Next.js', 'OpenAI', 'Pinecone', 'Algolia'],
-        thumbnail: '/projects/ai-search.png',
-        live: '',
-        github: '',
+        title: 'SIMS Hospital',
+        slug: 'sims-hospital',
+        liveUrl: 'https://simshospitals.com',
+        year: 2026,
+        description: `
+      A modern, feature-rich healthcare platform built for SIMS Hospital to manage patient services, doctor profiles, and appointment scheduling. <br/> <br/>
+      
+      Key Features:<br/>
+      <ul>
+        <li> Doctor Search & Profiles: Comprehensive system to find and view specialist details</li>
+        <li> Appointment Booking: Seamless online scheduling for patient consultations</li>
+        <li> Centres of Excellence: Dedicated sections for specialized medical departments</li>
+        <li> Patient Services: Integrated information for ambulance, pharmacy, and insurance services</li>
+        <li> Fully Responsive: Optimized for desktops, tablets, and mobile devices using Tailwind CSS 4</li>
+        <li> High Performance: Built with Next.js 15 for lightning-fast page transitions and SEO</li>
+      </ul><br/>
+      
+      Technical Highlights:
+      <ul>
+        <li>Implemented smooth, touch-enabled sliders using Embla Carousel</li>
+        <li>Developed a robust form system with React Hook Form and Zod validation</li>
+        <li>Built a theme-aware UI component library with Radix UI and Shadcn</li>
+        <li>Configured Swagger documentation for API transparency and testing</li>
+      </ul>
+      `,
+        role: `
+      Full-Stack Developer <br/>
+      Heavily involved in the core development and optimization:
+      <ul>
+        <li> Frontend Architecture: Structured the project using Next.js 15 App Router</li>
+        <li> UI/UX: Implemented complex, responsive layouts with modern animations</li>
+        <li> Logic: Refined visitor date/time logic and state synchronization</li>
+        <li> Documentation: Set up Storybook for component isolation and Swagger for API docs</li>
+        <li> Deployment: Managed environment configurations and site-wide routing</li>
+      </ul>
+      `,
+        techStack: [
+            'Next.js 15',
+            'Tailwind CSS 4',
+            'Radix UI',
+            'Shadcn/UI',
+            'Embla Carousel',
+            'React Hook Form',
+            'Zod',
+            'Axios',
+            'Storybook'
+        ],
+        thumbnail: '/projects/sims.webp',
+        longThumbnail: '/projects/sims.webp',
+        images: [
+            '/projects/sims.webp',
+        ],
     },
 ];

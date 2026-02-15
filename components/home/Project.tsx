@@ -150,7 +150,7 @@ const Project = ({ index, project, selectedProject, onMouseEnter }: Props) => {
                         </span>
                     </h4>
                     <div className="mt-2 flex flex-wrap gap-3 text-muted-foreground text-xs">
-                        {project.tech
+                        {project.techStack
                             .slice(0, 3)
                             .map((tech, idx, stackArr) => (
                                 <div
