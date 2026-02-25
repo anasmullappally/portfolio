@@ -170,4 +170,57 @@ export const PROJECTS: IProject[] = [
             '/projects/sims.webp',
         ],
     },
+    {
+        title: 'MDX Blog',
+        slug: 'next-mdx-blog',
+        liveUrl: 'https://deepdispute.com/',
+        year: 2025,
+        description: `
+      A modern, fast, and feature-rich blog application built using Next.js 15 and MDX, allowing content to be written in React-enabled Markdown. <br/> <br/>
+      
+      Key Features:<br/>
+      <ul>
+        <li> MDX Support: Write content using standard Markdown seamlessly combined with interactive React components</li>
+        <li> Theme Management: Fully integrated Dark/Light mode switching using next-themes</li>
+        <li> Syntax Highlighting: Beautiful code block styling leveraging PrismJS</li>
+        <li> SEO Optimized: Automatic sitemap generation using next-sitemap for better search engine visibility</li>
+        <li> High Performance: Built with Next.js 15 and Turbopack for lightning-fast compilation and page transitions</li>
+        <li> Rich Styling: Styled natively with Tailwind CSS and the Tailwind Typography plugin for optimal reading experiences</li>
+      </ul><br/>
+      
+      Technical Highlights:
+      <ul>
+        <li>Configured @next/mdx loader seamlessly within Next.js 15 App Router</li>
+        <li>Implemented dynamic routing to securely read and render MDX files as individual blog posts</li>
+        <li>Fully type-safe infrastructure configured with TypeScript and ESLint</li>
+      </ul>
+      `,
+        role: `
+      Full-Stack Developer <br/>
+      Built the blog platform to support rich markdown content and fast delivery:
+      <ul>
+        <li> Frontend Architecture: Established the foundation with Next.js 15 App Router and React 19</li>
+        <li> Markdown Integration: Set up custom MDX loaders to process and style markdown syntax</li>
+        <li> UI/UX: Leveraged Tailwind Typography to ensure blog posts remain consistently styled and responsive across all devices</li>
+        <li> Deployment: Configured automated build, linting, and sitemap generation workflows</li>
+      </ul>
+      `,
+        techStack: [
+            'Next.js 15',
+            'React 19',
+            'Tailwind CSS',
+            'MDX',
+            'TypeScript',
+            'PrismJS',
+            'next-themes',
+            'next-sitemap'
+        ],
+        thumbnail: '/projects/deepdispute/deepdispute_1.webp',
+        longThumbnail: '/projects/deepdispute/deepdispute_1.webp',
+        images: [
+            '/projects/deepdispute/deepdispute_1.webp',
+            '/projects/deepdispute/deepdispute_2.webp',
+            '/projects/deepdispute/deepdispute_3.webp',
+        ],
+    },
 ];
