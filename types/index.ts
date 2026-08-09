@@ -40,3 +40,12 @@ export interface IProject {
     images: string[];
 }
 
+export interface PhoneInfo {
+    country: string;
+    flag: string;
+    number: string;
+    display: string;
+    whatsappUrl: string;
+}
+
+

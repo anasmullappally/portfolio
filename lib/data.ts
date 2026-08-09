@@ -3,8 +3,24 @@ import { IProject, StackSection } from "@/types";
 export const GENERAL_INFO = {
     name: "Anas Mullappally",
     email: "anasmullappally.dev@gmail.com",
-    phone: "+918547700297",
-    phoneDisplay: "+91 85477 00297",
+    phone: "+971557875431",
+    phoneDisplay: "+971 55 787 5431",
+    phones: [
+        {
+            country: "UAE",
+            flag: "🇦🇪",
+            number: "+971557875431",
+            display: "+971 55 787 5431",
+            whatsappUrl: "https://wa.me/971557875431",
+        },
+        {
+            country: "India",
+            flag: "🇮🇳",
+            number: "+918547700297",
+            display: "+91 85 4770 0297",
+            whatsappUrl: "https://wa.me/918547700297",
+        },
+    ],
     emailSubject: "Let's collaborate on a project",
     emailBody:
         "Hi Anas, I came across your portfolio and would love to discuss a potential project with you.",
@@ -96,10 +112,16 @@ export const SOCIAL_LINKS = [
 
 export const MY_EXPERIENCE = [
     {
+        title: 'Mid-Level Software Engineer',
+        company: 'Hala Car Park Rental & Management LLC',
+        location: 'Dubai, UAE',
+        duration: 'April 2026 - Present',
+    },
+    {
         title: 'Full Stack Developer',
         company: 'Appiness Interactive',
         location: 'Bangalore, India',
-        duration: 'Jun 2024 - Present',
+        duration: 'Jun 2024 - Apr 2026',
     },
     {
         title: 'Full Stack Developer',
